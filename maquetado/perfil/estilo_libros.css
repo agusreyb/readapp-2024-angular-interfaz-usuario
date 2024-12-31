@@ -1,0 +1,30 @@
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem 0;
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .books-grid {
+        justify-content: center;
+    }
+
+    .book-card, .add-more {
+        width: 100%;
+        max-width: 350px;
+    }
+}

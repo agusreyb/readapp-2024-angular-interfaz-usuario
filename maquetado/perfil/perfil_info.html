@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadApp</title>
+  <link href="/estilos.css" rel="stylesheet" />
+  <link href="/header.css" rel="stylesheet" />
+  <link href="./estilo_perfil.css" rel="stylesheet" />
+  <link href="./estilo_perfil_info.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo Da 2" />
+  <script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="/imagenes\book-bold.svg" />
+      <h1>ReadApp</h1>
+    </div>
+    <div class="user-profile">
+      <img src="/imagenes\roman.jpg" class="profile-pic" />
+      <span> Roman Riquelme</span>
+    </div>
+    <!-- Menu de Hamburguesa -->
+    <div class="menu-hamburguesa">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="info_usuario">
+      <div class="fotoPerfil">
+        <img src="/imagenes/roman.jpg" class="imagen_perfil" />
+        <label class="nombre_perfil">Roman Riquelme</label>
+      </div>
+
+      <ul class="submenu_perfil">
+        <li class="boton_menu">
+          <img class="icono" src="/imagenes/info.svg" />
+          <a href="this"><strong>Informacion</strong></a>
+        </li>
+        <li class="boton_menu">
+          <img class="icono" src="/imagenes/amigos.svg" />
+          <a href="">Amigos</a>
+        </li>
+        <li class="boton_menu">
+          <img class="icono" src="/imagenes/libros.svg" />
+          <a href="">Libros leidos</a>
+        </li>
+        <li class="boton_menu">
+          <img class="icono" src="/imagenes/librosaleer.svg" />
+          <a href="">Libros a leer</a>
+        </li>
+        <li class="boton_menu">
+          <img class="icono" src="/imagenes/valorarReco.svg" />
+          <a href="">Recomendaciones a valorar</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info_conteiner">
+      <h1> Informacion</h1>
+      <h2> General </h2>
+
+      <section class="conteiner_datos">
+
+        <label>Nombre * <input type="text" required pattern=".*\S.*"></label>
+        <label>Apellido <input type="text" required pattern=".*\S.*"></label>
+        <label>Username <input type="text" required pattern=".*\S.*"></label>
+        <label>Fecha de nacimiento <input type="date" required pattern=".*\S.*"> </label>
+        <label>Mail <input type="text" required pattern=".*\S.*"></label>
+        <label>Tiempo de lectura promedio <input type="text" required pattern=".*\S.*"></label>
+
+      </section>
+
+      <h2>Forma de lectura</h2>
+      <div class="tipos_lectura">
+        <label><input type="checkbox">Lector promedio</label>
+        <label><input type="checkbox">Ansioso</label>
+        <label><input type="checkbox">Fanatico</label>
+        <label><input type="checkbox">Recurrente</label>
+
+      </div>
+      <h2>Criterio de busqueda</h2>
+      <div class="criterio_conteiner">
+        <label><input type="checkbox">Precavido</label>
+        <label><input type="checkbox">Demandante</label>
+        <label><input type="checkbox">Cambiante</label>
+        <label><input type="checkbox">Leedor</label>
+        <label><input type="checkbox">Nativista</label>
+        <label><input type="checkbox">Poliglota</label>
+        <label><input type="checkbox">Experimentado</label>
+        <label><input type="checkbox">Calculador</label>
+        <div class="calculador">
+          <label>Maximo*<input type="text" required pattern=".*\S.*"></label>
+          <label>Minimo*<input type="text" required pattern=".*\S.*"></label>
+        </div>
+
+      </div>
+
+      <div class="boton_container">
+        <button class="boton_cancelar" type="submit">Cancelar</button>
+        <button class="boton_guardar" type="submit">Guardar cambios</button>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
